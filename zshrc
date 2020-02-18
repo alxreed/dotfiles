@@ -32,6 +32,7 @@ export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+<<<<<<< HEAD
 
 export PATH="$PATH:/home/alexandre/flutter/bin"
 export PATH="$PATH:/home/alexandre/Android/Sdk/tools/bin"
@@ -50,3 +51,6 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+=======
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+>>>>>>> c5f1347ac9e154a64f6cf5258c7359558509c0c3
