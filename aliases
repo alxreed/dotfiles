@@ -11,3 +11,11 @@ alias lock="gnome-screensaver-command -l"
 
 # app running
 alias apps="ps -A"
+
+# Pushing/pulling to origin remote
+alias gpo="git push origin"
+alias glo="git pull origin"
+
+# Pushing/pulling to origin remote, master branch
+alias glom="git pull origin master"
+alias glod="git pull origin develop"
