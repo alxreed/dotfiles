@@ -29,6 +29,10 @@
        && git commit --fixup $SHA \
        && git rebase -i --autosquash $SHA~' -
   pushf = push --force-with-lease
+  po = push origin
+  plo = pull origin
+  plod = pull origin dev
+  plom = pull origin master
 
   # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
