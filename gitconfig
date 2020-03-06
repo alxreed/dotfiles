@@ -11,6 +11,7 @@
 
 [core]
   pager = less -FRSX
+	autocrlf = input
 	
 
 [alias]
