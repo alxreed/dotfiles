@@ -19,3 +19,7 @@ alias glo="git pull origin"
 # Pushing/pulling to origin remote, master branch
 alias glom="git pull origin master"
 alias glod="git pull origin develop"
+alias bundletool="java -jar /home/alexandre/Tools/bundletool-all-0.14.0.jar"
+
+# update && upgrade packages
+alias up="sudo apt-get update && sudo apt-get upgrade"
