@@ -53,3 +53,5 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
 export PATH="$PATH:/home/alexandre/code/alxreed/coding_tools/geckodriver-v0.26.0-linux64"
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
