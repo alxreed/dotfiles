@@ -22,4 +22,7 @@ alias glod="git pull origin develop"
 alias bundletool="java -jar /home/alexandre/Tools/bundletool-all-0.14.0.jar"
 
 # update && upgrade packages
-alias up="sudo apt-get update && sudo apt-get upgrade"
+alias up="yay -Syu"
+
+# connect to ubastion
+alias bastion="ssh ubastion.adeo.com -l 20013176"

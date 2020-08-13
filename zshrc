@@ -33,24 +33,24 @@ export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
-export PATH="$PATH:/home/alexandre/flutter/bin"
-export PATH="$PATH:/home/alexandre/Android/Sdk/tools/bin"
-export PATH="$PATH:/home/alexandre/Android/Sdk/build-tools/29.0.2"
-export PATH="$PATH:/home/alexandre/Android/Sdk/platform-tools"
-export PATH="$PATH:/home/alexandre/Android/Sdk/emulator"
-export PATH="$PATH:/usr/lib/jvm/jdk-13.0.2/bin"
-export PATH="$PATH:/home/alexandre/Maven/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin"
+#export PATH="$PATH:/home/alexandre/flutter/bin"
+#export PATH="$PATH:/home/alexandre/Android/Sdk/tools/bin"
+#export PATH="$PATH:/home/alexandre/Android/Sdk/build-tools/29.0.2"
+#export PATH="$PATH:/home/alexandre/Android/Sdk/platform-tools"
+#export PATH="$PATH:/home/alexandre/Android/Sdk/emulator"
+#export PATH="$PATH:/usr/lib/jvm/jdk-13.0.2/bin"
+#export PATH="$PATH:/home/alexandre/Maven/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin"
 
-export GRADLE_HOME=/opt/gradle/gradle-6.1.1
-export PATH=${GRADLE_HOME}/bin:${PATH}
+#export GRADLE_HOME=/opt/gradle/gradle-6.1.1
+#export PATH=${GRADLE_HOME}/bin:${PATH}
 
 
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+#export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
 export PATH="$PATH:/home/alexandre/code/alxreed/coding_tools/geckodriver-v0.26.0-linux64"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
