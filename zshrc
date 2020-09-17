@@ -33,21 +33,10 @@ export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
-#export PATH="$PATH:/home/alexandre/flutter/bin"
-#export PATH="$PATH:/home/alexandre/Android/Sdk/tools/bin"
-#export PATH="$PATH:/home/alexandre/Android/Sdk/build-tools/29.0.2"
-#export PATH="$PATH:/home/alexandre/Android/Sdk/platform-tools"
-#export PATH="$PATH:/home/alexandre/Android/Sdk/emulator"
-#export PATH="$PATH:/usr/lib/jvm/jdk-13.0.2/bin"
 #export PATH="$PATH:/home/alexandre/Maven/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin"
 
 #export GRADLE_HOME=/opt/gradle/gradle-6.1.1
 #export PATH=${GRADLE_HOME}/bin:${PATH}
-
-
-
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
 
 #export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 #export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
@@ -56,3 +45,25 @@ export PATH="$PATH:/home/alexandre/code/alxreed/coding_tools/geckodriver-v0.26.0
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+
+#export JAVA_HOME='/usr/lib/jvm/java-14-openjdk'
+export ANDROID_HOME='/home/alexandre/Android/Sdk'
+
+# Android SDK
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools/"
+export PATH="$PATH:$ANDROID_HOME/tools/bin/"
+export PATH="$PATH:$ANDROID_HOME/tools/"
+PATH="$ANDROID_HOME/emulator:$PATH"
+
+# Node Version Manager
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Java
+export JAVA_HOME='/usr/lib/jvm/default'
+
+# Intellij
+export IDEA_JDK='/opt/intellij-idea-ultimate-edition/jbr'
+
+
