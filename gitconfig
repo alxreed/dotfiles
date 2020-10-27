@@ -55,7 +55,11 @@
   autocorrect = 1
 
 [push]
-	default = simple
+  # Push the current branch to a branch of the same name
+	default = current
+
+[pull]
+    rebase = true
 
 [branch "master"]
   mergeoptions = --no-edit
