@@ -64,5 +64,5 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = ch.Alexandre.reed@gmail.com
+	email = ch.alexandre.reed@gmail.com
 	name = Alexandre Reed
