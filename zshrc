@@ -29,24 +29,10 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-
-#export PATH="$PATH:/home/alexandre/Maven/apache-maven-3.6.3-bin/apache-maven-3.6.3/bin"
-
-#export GRADLE_HOME=/opt/gradle/gradle-6.1.1
-#export PATH=${GRADLE_HOME}/bin:${PATH}
-
-#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-#export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
 export PATH="$PATH:/home/alexandre/code/alxreed/coding_tools/geckodriver-v0.26.0-linux64"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
-#export JAVA_HOME='/usr/lib/jvm/java-14-openjdk'
 export ANDROID_HOME='/home/alexandre/Android/Sdk'
 
 # Android SDK
@@ -69,5 +55,3 @@ export IDEA_JDK='/opt/intellij-idea-ultimate-edition/jbr'
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
 
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
