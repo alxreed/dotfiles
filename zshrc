@@ -70,3 +70,4 @@ export IDEA_JDK='/opt/intellij-idea-ultimate-edition/jbr'
 export PATH="$PATH:$HOME/.cargo/bin"
 
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
