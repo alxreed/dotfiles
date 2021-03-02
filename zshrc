@@ -47,7 +47,14 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Java
-export JAVA_HOME='/usr/lib/jvm/default'
+DIST=$(cat /etc/os-release | grep ID)
+DEBIAN='debian'
+ARCH='arch'
+if [[ "$DIST" == *"$DEBIAN"* ]]; then
+  export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64'
+elif [[ "$DIST" == *"$ARCH"* ]]; then
+  export JAVA_HOME='/usr/lib/jvm/default'
+fi
 
 # Intellij
 export IDEA_JDK='/opt/intellij-idea-ultimate-edition/jbr'
@@ -55,3 +62,5 @@ export IDEA_JDK='/opt/intellij-idea-ultimate-edition/jbr'
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
 
+# Flutter
+export PATH="$PATH":"$HOME/.pub-cache/bin"
