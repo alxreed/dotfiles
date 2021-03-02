@@ -21,6 +21,10 @@ alias glom="git pull origin master"
 alias glod="git pull origin develop"
 alias bundletool="java -jar /home/alexandre/Tools/bundletool-all-0.14.0.jar"
 
+# Commit amend
+alias gcamno="git commit --amend --no-edit"
+alias gcam="git commit --amend"
+
 # update && upgrade packages
 #alias up="yay -Syu"
 #alias up="sudo apt update && sudo apt upgrade && sudo snap refresh"

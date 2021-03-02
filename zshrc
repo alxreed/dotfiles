@@ -33,9 +33,8 @@ export LC_ALL=en_US.UTF-8
 export PATH="$PATH:/home/alexandre/code/alxreed/coding_tools/geckodriver-v0.26.0-linux64"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
-export ANDROID_HOME='/home/alexandre/Android/Sdk'
-
 # Android SDK
+export ANDROID_HOME='/home/alexandre/Android/Sdk'
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/platform-tools/"
 export PATH="$PATH:$ANDROID_HOME/tools/bin/"
