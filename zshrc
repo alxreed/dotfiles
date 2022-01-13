@@ -54,3 +54,4 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 # Flutter
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
