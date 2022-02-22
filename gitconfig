@@ -12,7 +12,7 @@
 [core]
   pager = less -FRSX
 	autocrlf = input
-	editor = subl -n -w  >/dev/null 2>&1
+	editor = vim
 	
 
 [alias]
