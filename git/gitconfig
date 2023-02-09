@@ -13,7 +13,6 @@
   pager = less -FRSX
 	autocrlf = input
 	editor = vim
-	
 
 [alias]
   co = checkout
@@ -46,7 +45,7 @@
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
   serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
 
-  m = checkout master
+  m = checkout main
 
   # Removes a file from the index
   unstage = reset HEAD --
@@ -59,12 +58,14 @@
 	default = current
 
 [pull]
-    rebase = true
+  rebase = true
 
-[branch "master"]
+[branch "main"]
   mergeoptions = --no-edit
+
 [user]
 	email = ch.alexandre.reed@gmail.com
 	name = Alexandre Reed
+
 [init]
 	defaultBranch = main

@@ -1,0 +1,8 @@
+dotfiles_dir = "code/alxreed/dotfiles"
+
+[settings.dots]
+alacritty = { source = "terminals/alacritty", target = ".config/alacritty" }
+zsh = { source = "zsh/zshrc", target = ".zshrc" }
+zsh_env = { source = "zsh/zshenv", target = ".zshenv" }
+gitconfig = { source = "git/gitconfig", target = ".gitconfig" }
+pictures = { source = "pictures", target = "Images" }

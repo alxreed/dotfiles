@@ -1,0 +1,16 @@
+# Java
+DIST=$(cat /etc/os-release | grep ID)
+if [[ "$DIST" == *"debian"* ]]; then
+  export JAVA_HOME='/usr/lib/jvm/java-18-openjdk-amd64'
+elif [[ "$DIST" == *"arch"* ]]; then
+  export JAVA_HOME='/usr/lib/jvm/default'
+fi
+
+# Intellij
+export IDEA_JDK='/opt/intellij-idea-ultimate-edition/jbr'
+
+# Rust
+export PATH="$PATH:$HOME/.cargo/bin"
+
+# Flutter
+export PATH="$PATH":"$HOME/.pub-cache/bin"
