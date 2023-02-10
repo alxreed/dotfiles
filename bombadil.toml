@@ -4,5 +4,6 @@ dotfiles_dir = "code/alxreed/dotfiles"
 alacritty = { source = "terminals/alacritty", target = ".config/alacritty" }
 zsh = { source = "zsh/zshrc", target = ".zshrc" }
 zsh_env = { source = "zsh/zshenv", target = ".zshenv" }
+starship = { source = "zsh/starship.toml", target = ".config/starship.toml" }
 gitconfig = { source = "git/gitconfig", target = ".gitconfig" }
 pictures = { source = "pictures", target = "Images" }
