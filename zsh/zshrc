@@ -66,4 +66,5 @@ up(){
 # connect to ubastion
 alias bastion="ssh ubastion.adeo.com -l 20013176"
 
+prompt off
 eval "$(starship init zsh)"
