@@ -1,10 +1,9 @@
 # Java
-DIST=$(cat /etc/os-release | grep ID)
-if [[ "$DIST" == *"debian"* ]]; then
+{% if "ubuntu" in profiles %}
   export JAVA_HOME='/usr/lib/jvm/java-18-openjdk-amd64'
-elif [[ "$DIST" == *"arch"* ]]; then
+{% elif "arch" in profiles %}
   export JAVA_HOME='/usr/lib/jvm/default'
-fi
+{% endif %}
 
 # Intellij
 export IDEA_JDK='/opt/intellij-idea-ultimate-edition/jbr'

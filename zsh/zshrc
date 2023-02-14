@@ -49,22 +49,16 @@ alias glod="git pull origin develop"
 alias gcamno="git commit --amend --no-edit"
 alias gcam="git commit --amend"
 
-# update && upgrade packages
-#alias up="yay -Syu"
-#alias up="sudo apt update && sudo apt upgrade && sudo snap refresh"
-up(){
-  DIST=$(sudo cat /etc/os-release | grep ID)
-  DEBIAN='debian'
-  ARCH='arch'
-  if [[ "$DIST" == *"$DEBIAN"* ]]; then
-    sudo apt update && sudo apt upgrade && sudo snap refresh
-  elif [[ "$DIST" == *"$ARCH"* ]]; then
-    yay -Syu
-  fi
-}
-
 # connect to ubastion
 alias bastion="ssh ubastion.adeo.com -l 20013176"
 
-prompt off
+# update && upgrade packages
+{% if "ubuntu" in profiles %}
+  alias up="sudo apt update && sudo apt upgrade && sudo snap refresh"
+{% elif "arch" in profiles %}
+  alias up="yay -Syu"
+
+  prompt off
+{% endif %}
+
 eval "$(starship init zsh)"
