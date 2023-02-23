@@ -1,11 +1,35 @@
 dotfiles_dir = "code/alxreed/dotfiles"
 
+[settings]
+#vars = [ "vars.toml"]
+posthooks = [ "sway reload" ]
+
 [settings.dots]
 alacritty = { source = "terminals/alacritty", target = ".config/alacritty" }
 zsh = { source = "zsh/zshrc", target = ".zshrc" }
 zsh_env = { source = "zsh/zshenv", target = ".zshenv" }
 gitconfig = { source = "git/gitconfig", target = ".gitconfig" }
 pictures = { source = "pictures", target = "Images/pictures" }
+
+# Themes
+theme = { source = "themes/Catppuccin-Mocha-Standard-Blue-Dark", target = ".themes/Catppuccin-Mocha-Standard-Blue-Dark" }
+gtk2 = { source = "themes/Catppuccin-Mocha-Standard-Blue-Dark/gtk-2.0/gtkrc", target = ".gtkrc-2.0" }
+gtk3 = { source = "themes/Catppuccin-Mocha-Standard-Blue-Dark/gtk-3.0", target = ".config/gtk-3.0" }
+gtk4 = { source = "themes/Catppuccin-Mocha-Standard-Blue-Dark/gtk-4.0", target = ".config/gtk-4.0" }
+
+# Cursor
+dmz = { source = "cursor", target = ".icons/default"}
+
+# status bar
+waybar = { source = "bars/waybar", target = ".config/waybar" }
+
+# launcher
+onagre = { source = "launchers/onagre", target = ".config/onagre" }
+
+# wm
+sway = { source = "wm/sway", target = ".config/sway" }
+kanshi = { source = "wm/kanshi", target = ".config/kanshi" }
+mako = { source = "wm/wob", target = ".config/wob" }
 
 [profiles.ubuntu]
 
