@@ -1,8 +1,8 @@
 env:
   TERM: xterm-256color
 
-window:
-  opacity: 0.90 
+#window:
+#  opacity: 0.90
 
 font:
   normal:
