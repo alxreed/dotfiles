@@ -1,10 +1,10 @@
 {
   // "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 30,
+  "height": 35,
   // Waybar height (to be removed for auto height)
   // "width": 1600,   // Waybar width
-  "margin": "5 10",
+  "margin": "10",
   "spacing": 4,
   // Gaps between modules (4px)
   // Choose the order of the modules
@@ -119,9 +119,10 @@
   },
   "battery": {
     "states": {
-      "good": 95,
+      "good": 100,
+      "ok": 50,
       "warning": 30,
-      "critical": 15
+      "critical": 10
     },
     "format": "{capacity}% {icon}",
     "format-plugged": "\uF584",
@@ -153,8 +154,8 @@
     // "scroll-step": 1, // %, can be a float
     "format": "{icon} {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
+    "format-bluetooth-muted": "\uF466 {icon} {format_source}",
+    "format-muted": "\uF466 {format_source}",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
@@ -173,7 +174,7 @@
     "on-click": "pavucontrol"
   },
    "custom/power": {
-       "on-click": "swaynag -t warning -m 'Do you want to exit sway ?' -B 'Yes, exit sway' 'swaymsg exit'",
+       "on-click": "wlogout -p layer-shell",
        "format": "襤"
    }
 }

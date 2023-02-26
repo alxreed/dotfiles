@@ -1,0 +1,73 @@
+.onagre {
+  --exit-unfocused: false;
+  height: 375px;
+  width: 600px;
+  --icon-theme: "zafiro-dark";
+  --icon-size: 40px;
+  --font-family: "FiraCode Nerd Font";
+  background: #1e1e2e;
+  color: #cdd6f4;
+  border-radius: 10%;
+  border-color: #94e2d5;
+  border-width: 4px;
+  padding: 10px;
+
+  .container {
+    padding: 10px;
+    .search {
+      --spacing: 1;
+      --height: fill-portion 1;
+
+      .plugin-hint {
+        background: #89b4fa;
+        border-radius: 25%;
+        color: #1e1e2e;
+        font-size: 18px;
+        --align-x: center;
+        --align-y: center;
+        --width: fill-portion 1;
+        --height: fill;
+      }
+
+      .input {
+        font-size: 20px;
+        --width: fill-portion 11;
+      }
+    }
+
+    .rows {
+      --height: fill-portion 8;
+
+      .row-selected {
+        padding: 15px;
+        background: #f5c2e7;
+        border-radius: 50%;
+        --spacing: 3px;
+        --align-y: center;
+
+        .title {
+          font-size: 20px;
+          color: #1e1e2e;
+          padding-top: 13px;
+          padding-left: 5px;
+        }
+      }
+
+      .row {
+        padding: 15px;
+        .title {
+          font-size: 20px;
+          padding-top: 13px;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .scrollable {
+      background: #00000000;
+      .scroller {
+        color: #4c566a00;
+      }
+    }
+  }
+}

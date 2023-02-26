@@ -30,12 +30,12 @@ button:hover {
 
 #custom-arch {
     color: @blue;
-    font-size: 2rem;
-    margin: 0 1.2rem 0 1rem;
+    font-size: 1.5rem;
+    margin: 0  0.5rem  0 1.5rem;
 }
 
 #workspaces {
-    margin: 0 4px;
+    /*margin: 0 4px;*/
 }
 
 #workspaces button {
@@ -53,6 +53,10 @@ button:hover {
 #mode {
     background-color: #64727D;
     border-bottom: 3px solid #ffffff;
+}
+
+#clock {
+    font-size: 0.8rem;
 }
 
 #clock,
@@ -93,12 +97,8 @@ button:hover {
     /*background-color: #64727D;*/
 }
 
-#battery {
-    /*color: #000000;*/
-}
-
 #battery.charging, #battery.plugged {
-    color: @green;
+    color: @teal;
 }
 
 @keyframes blink {
@@ -106,6 +106,18 @@ button:hover {
         background-color: #ffffff;
         color: #000000;
     }
+}
+
+#battery.good:not(.charging) {
+    color: @green;
+}
+
+#battery.ok:not(.charging) {
+    color: @text;
+}
+
+#battery.warning:not(.charging) {
+    color: @maroon;
 }
 
 #battery.critical:not(.charging) {
@@ -185,6 +197,6 @@ label:focus {
 
 #custom-power {
     color: @blue;
-    font-size: 2rem;
-    margin: 0 1rem 0 1.2rem;
+    font-size: 1.5rem;
+    margin: 0 1rem 0 0.5rem;
 }

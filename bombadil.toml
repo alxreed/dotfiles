@@ -1,7 +1,6 @@
 dotfiles_dir = "code/alxreed/dotfiles"
 
 [settings]
-#vars = [ "vars.toml"]
 posthooks = [ "sway reload" ]
 
 [settings.dots]
@@ -25,11 +24,13 @@ waybar = { source = "bars/waybar", target = ".config/waybar" }
 
 # launcher
 onagre = { source = "launchers/onagre", target = ".config/onagre" }
+wofi = { source = "launchers/wofi", target = ".config/wofi" }
 
 # wm
 sway = { source = "wm/sway", target = ".config/sway" }
 kanshi = { source = "wm/kanshi", target = ".config/kanshi" }
 mako = { source = "wm/wob", target = ".config/wob" }
+wlogout = { source = "wm/wlogout", target = ".config/wlogout" }
 
 [profiles.ubuntu]
 
