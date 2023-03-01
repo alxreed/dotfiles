@@ -13,3 +13,13 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 # Flutter
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+fullscreenshot() {
+  FILE=~/Images/"screenshot-$(date +"%Y-%m-%dT%H:%M:%S").png"
+  grimshot save screen $FILE
+}
+
+screenshot() {
+  FILE=~/Images/"screenshot-$(date +"%Y-%m-%dT%H:%M:%S").png"
+  grimshot save area $FILE
+}

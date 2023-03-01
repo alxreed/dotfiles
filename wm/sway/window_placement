@@ -1,0 +1,13 @@
+# Assignment
+
+assign [class="Google-chrome"] → $ws1
+assign [class="Slack"] → $ws3
+assign [class="discord"] → $ws4
+assign [class="sun-awt-X11-XWindowPeer" class="java-lang-Thread"] → $ws5
+assign [class="sun-awt-X11-XFramePeer" class="jetbrains-idea"] → $ws5
+assign [class="jetbrains-idea" title="(.*)IntelliJ IDEA"] → $ws5
+
+# Floating
+for_window [class="vlc"] floating enable
+for_window [app_id="pavucontrol"] floating enable
+for_window [app_id="org.gnome.Nautilus"] floating enable

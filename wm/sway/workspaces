@@ -1,0 +1,34 @@
+# Workspace naming 
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Output configuration
+
+workspace $ws1 output $dsp2 primary
+workspace $ws2 output primary 
+workspace $ws3 output primary 
+workspace $ws4 output primary
+workspace $ws5 output primary
+workspace $ws6 output primary
+workspace $ws7 output primary
+workspace $ws8 output primary
+workspace $ws9 output primary
+workspace $ws10 output primary
+
+# Gaps and egdes
+
+smart_gaps on
+smart_borders on
+default_border pixel 4
+gaps inner 8
+#gaps outer 8
+focus_follows_mouse no

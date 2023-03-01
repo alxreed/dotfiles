@@ -1,0 +1,25 @@
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec_always kanshi
+exec_always nm-applet --indicator
+exec_always autotiling
+exec_always swaybg --image $HOME/code/alxreed/dotfiles/pictures/wallpapers/wallpapersden.com_k-anime-landscape-alone-adventure_5905x3000.jpg
+exec_always wl-paste -t text --watch clipman store --no-persist
+exec_always /usr/share/sway/scripts/inactive-windows-transparency.py --opacity 0.90
+
+# Graphical indicator for sound and brightness
+set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
+exec_always rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
+
+include variables
+include catppuccin_frappe
+include colors
+include workspaces
+include window_placement
+include inputs
+include key_bindings
+include gtk
+include bar
+
+
+
+

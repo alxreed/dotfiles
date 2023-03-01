@@ -1,0 +1,202 @@
+@import "frappe.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "FiraCode Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+window#waybar {
+    background-color: @crust;
+    border-radius: 12rem;
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#custom-arch {
+    color: @blue;
+    font-size: 1.5rem;
+    margin: 0  1rem  0 1.5rem;
+}
+
+#workspaces {
+    /*margin: 0 4px;*/
+}
+
+#workspaces button {
+    font-size: 1.5rem;
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button.focused {
+    color: @red;
+    box-shadow: inset 0 -3px @red;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock {
+    font-size: 0.8rem;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#window {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    /*background-color: #64727D;*/
+}
+
+#battery.charging, #battery.plugged {
+    color: @teal;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.good:not(.charging) {
+    color: @green;
+}
+
+#battery.ok:not(.charging) {
+    color: @text;
+}
+
+#battery.warning:not(.charging) {
+    color: @maroon;
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+
+#backlight {
+    color: @yellow;
+}
+
+#pulseaudio {
+    color: @pink;
+}
+
+
+#custom-media {
+    /*background-color: #66cc99;*/
+    /*color: #2a5c45;*/
+    /*min-width: 100px;*/
+}
+
+#custom-media.custom-spotify {
+    /*background-color: #66cc99;*/
+}
+
+#custom-media.custom-vlc {
+    /*background-color: #ffa000;*/
+}
+
+#tray {
+    color: @lavender;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    /*background-color: #eb4d4b;*/
+}
+
+#mpd {
+    /*background-color: #66cc99;*/
+    /*color: #2a5c45;*/
+}
+
+#mpd.disconnected {
+    /*background-color: #f53c3c;*/
+}
+
+#mpd.stopped {
+    /*background-color: #90b1b1;*/
+}
+
+#mpd.paused {
+    /*background-color: #51a37a;*/
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+	background-color: transparent;
+}
+
+#custom-power {
+    color: @blue;
+    font-size: 1.5rem;
+    margin: 0 1rem 0 0.5rem;
+}
