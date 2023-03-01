@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "frappe.css";
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-    background-color: @base;
+    background-color: @crust;
     border-radius: 12rem;
     color: @text;
     transition-property: background-color;
@@ -31,7 +31,7 @@ button:hover {
 #custom-arch {
     color: @blue;
     font-size: 1.5rem;
-    margin: 0  0.5rem  0 1.5rem;
+    margin: 0  1rem  0 1.5rem;
 }
 
 #workspaces {

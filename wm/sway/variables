@@ -14,7 +14,7 @@ set $term alacritty
 # on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
-set $lock "swaylock -c 1e1e2e"
+set $lock "swaylock"
 
 set $launcher "WGPU_BACKEND=vulkan onagre"
 

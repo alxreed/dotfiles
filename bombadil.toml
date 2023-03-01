@@ -31,6 +31,7 @@ sway = { source = "wm/sway", target = ".config/sway" }
 kanshi = { source = "wm/kanshi", target = ".config/kanshi" }
 mako = { source = "wm/wob", target = ".config/wob" }
 wlogout = { source = "wm/wlogout", target = ".config/wlogout" }
+swaylock = { source = "wm/swaylock", target = ".config/swaylock" }
 
 [profiles.ubuntu]
 

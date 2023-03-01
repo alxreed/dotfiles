@@ -5,10 +5,10 @@
   --icon-theme: "zafiro-dark";
   --icon-size: 40px;
   --font-family: "FiraCode Nerd Font";
-  background: #1e1e2e;
-  color: #cdd6f4;
+  background: #303446;
+  color: #c6d0f5;
   border-radius: 10%;
-  border-color: #94e2d5;
+  border-color: #81c8be;
   border-width: 4px;
   padding: 10px;
 
@@ -19,9 +19,9 @@
       --height: fill-portion 1;
 
       .plugin-hint {
-        background: #89b4fa;
+        background: #8caaee;
         border-radius: 25%;
-        color: #1e1e2e;
+        color: #303446;
         font-size: 18px;
         --align-x: center;
         --align-y: center;
@@ -37,17 +37,18 @@
 
     .rows {
       --height: fill-portion 8;
+      padding-top: 5px;
 
       .row-selected {
         padding: 15px;
-        background: #f5c2e7;
+        background: #f4b8e4;
         border-radius: 50%;
         --spacing: 3px;
         --align-y: center;
 
         .title {
           font-size: 20px;
-          color: #1e1e2e;
+          color: #303446;
           padding-top: 13px;
           padding-left: 5px;
         }

@@ -2,8 +2,8 @@ window {
     font-family: "Recursive Sans Casual Static";
     font-size: 13px;
     margin: 0px;
-    border: 5px solid #94e2d5;
-    background-color: #1e1e2e;
+    border: 5px solid #81c8be;
+    background-color: #303446;
     border-radius: 2rem;
 }
 
@@ -15,7 +15,7 @@ window {
     border: none;
     color: #cdd6f4;
     font-weight: bold;
-    background-color: #1e1e2e;
+    background-color: #303446;
     outline: none;
     border-radius: 12rem;
     margin: 10px;
@@ -34,7 +34,7 @@ window {
     padding: 3px;
     border: none;
     border-radius: 2rem;
-    border: 5px solid #94e2d5;
+    border: 5px solid #81c8be;
 }
 
 #scroll {
@@ -67,5 +67,5 @@ window {
     margin: 0px 0px;
     border: none;
     border-radius: 2rem;
-    background: #cba6f7;
+    background: #ca9ee6;
 }
