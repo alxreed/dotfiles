@@ -2,7 +2,7 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 exec_always kanshi
 exec_always nm-applet --indicator
 exec_always autotiling
-exec_always swaybg --image $HOME/code/alxreed/dotfiles/pictures/wallpapers/wallpapersden.com_k-anime-landscape-alone-adventure_5905x3000.jpg
+exec_always swaybg --image $HOME/code/alxreed/dotfiles/pictures/wallpapers/catppuccin-frappe/cowboy-bebop/sky-bebop.jpg
 exec_always wl-paste -t text --watch clipman store --no-persist
 exec_always /usr/share/sway/scripts/inactive-windows-transparency.py --opacity 0.90
 
