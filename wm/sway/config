@@ -1,8 +1,9 @@
+font Cantarell
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec_always kanshi
 exec_always nm-applet --indicator
 exec_always autotiling
-exec_always swaybg --image $HOME/code/alxreed/dotfiles/pictures/wallpapers/catppuccin-frappe/cowboy-bebop/sky-bebop.jpg
+exec_always swaybg --image $HOME/code/alxreed/dotfiles/pictures/wallpapers/catppuccin-frappe/cowboy-bebop/surface1-bebop.jpg
 exec_always wl-paste -t text --watch clipman store --no-persist
 exec_always /usr/share/sway/scripts/inactive-windows-transparency.py --opacity 0.90
 

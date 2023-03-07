@@ -1,15 +1,16 @@
 {
   // "layer": "top", // Waybar at top layer
+  "output": "eDP-1",
   // "position": "bottom", // Waybar position (top|bottom|left|right)
   "height": 35,
   // Waybar height (to be removed for auto height)
   // "width": 1600,   // Waybar width
-  "margin": "10",
+  //"margin": "10",
   "spacing": 4,
   // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
-    "custom/arch",
+    "custom/os",
     "sway/workspaces",
     "sway/mode",
     "sway/scratchpad",
@@ -20,7 +21,6 @@
   ],
   "modules-right": [
     "tray",
-    "mpd",
     "pulseaudio",
     "network",
     "backlight",
@@ -28,8 +28,8 @@
     "battery#bat2",
     "custom/power"
   ],
-  "custom/arch": {
-    "format": "\uF303"
+  "custom/os": {
+    "format": "\uF31C"
   },
   "sway/workspaces": {
     "all-outputs": true,
