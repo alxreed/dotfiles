@@ -1,0 +1,9 @@
+profile default {
+    output eDP-1 mode 1920x1080 scale 1
+}
+
+profile work {
+    output eDP-1 mode 1920x1080 position 1920,0
+    output HDMI-A-1 mode 1920x1080 position 0,0
+    exec swaymsg '[workspace="1"]', move workspace to output HDMI-A-1
+}

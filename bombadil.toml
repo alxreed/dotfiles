@@ -13,14 +13,11 @@ pictures = { source = "pictures", target = "Images/pictures" }
 # Themes
 theme = { source = "themes/Catppuccin-Mocha-Standard-Blue-Dark", target = ".themes/Catppuccin-Mocha-Standard-Blue-Dark" }
 gtk2 = { source = "themes/Catppuccin-Mocha-Standard-Blue-Dark/gtk-2.0/gtkrc", target = ".gtkrc-2.0" }
-gtk3 = { source = "themes/Catppuccin-Mocha-Standard-Blue-Dark/gtk-3.0", target = ".config/gtk-3.0" }
+#gtk3 = { source = "themes/Catppuccin-Mocha-Standard-Blue-Dark/gtk-3.0", target = ".config/gtk-3.0" }
 gtk4 = { source = "themes/Catppuccin-Mocha-Standard-Blue-Dark/gtk-4.0", target = ".config/gtk-4.0" }
 
 # Cursor
 dmz = { source = "cursor", target = ".icons/default"}
-
-# status bar
-waybar = { source = "bars/waybar", target = ".config/waybar" }
 
 # launcher
 onagre = { source = "launchers/onagre", target = ".config/onagre" }
@@ -28,17 +25,27 @@ wofi = { source = "launchers/wofi", target = ".config/wofi" }
 
 # wm
 sway = { source = "wm/sway", target = ".config/sway" }
-kanshi = { source = "wm/kanshi", target = ".config/kanshi" }
 mako = { source = "wm/wob", target = ".config/wob" }
 wlogout = { source = "wm/wlogout", target = ".config/wlogout" }
 swaylock = { source = "wm/swaylock", target = ".config/swaylock" }
 
 [profiles.ubuntu]
-
 [profiles.arch]
+[profiles.dell]
+[profiles.lenovo-yoga]
 
 [profiles.ubuntu.dots]
 starship = { source = "zsh/starship.toml", target = ".config/starship/starship.toml" }
+waybar = { source = "bars/waybar/ubuntu", target = ".config/waybar" }
+neofetch = { source = "neofetch/ubuntu", target = ".config/neofetch" }
 
 [profiles.arch.dots]
 starship = { source = "zsh/starship.toml", target = ".config/starship.toml" }
+waybar = { source = "bars/waybar/arch", target = ".config/waybar" }
+neofetch = { source = "neofetch/arch", target = ".config/neofetch" }
+
+[profiles.dell.dots]
+kanshi = { source = "wm/kanshi/dell", target = ".config/kanshi" }
+
+[profiles.lenovo-yoga.dots]
+kanshi = { source = "wm/kanshi/lenovo-yoga", target = ".config/kanshi" }
