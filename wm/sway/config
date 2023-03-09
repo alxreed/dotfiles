@@ -1,4 +1,4 @@
-font Cantarell
+font Open Sans Regular 12
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec_always kanshi
 exec_always nm-applet --indicator
