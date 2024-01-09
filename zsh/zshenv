@@ -1,6 +1,6 @@
 # Java
 {% if "ubuntu" in profiles %}
-  export JAVA_HOME='/usr/lib/jvm/java-18-openjdk-amd64'
+  export JAVA_HOME='/usr/lib/jvm/java-21-openjdk-amd64'
 {% elif "arch" in profiles %}
   export JAVA_HOME='/usr/lib/jvm/default'
 {% endif %}
