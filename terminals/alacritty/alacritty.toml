@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/catppuccin/catppuccin-frappe.toml"]
+general.import = ["~/.config/alacritty/catppuccin/catppuccin-frappe.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -18,5 +18,5 @@ style = "Italic"
 family = "Fira Code"
 style = "Medium"
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
