@@ -5,6 +5,9 @@ export LC_ALL=en_US.UTF-8
 # Editor
 export VISUAL="nvim"
 
+# nvm
+source /usr/share/nvm/init-nvm.sh
+
 # Antigen 
 source /usr/share/zsh/share/antigen.zsh 
 antigen use oh-my-zsh
