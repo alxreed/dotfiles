@@ -1,0 +1,18 @@
+spawn-sh-at-startup "vicinae server"
+spawn-at-startup "qs" "-c" "noctalia-shell"
+
+prefer-no-csd
+
+include "configs/input.kdl"
+include "configs/layout.kdl"
+include "configs/binds.kdl"
+include "configs/rules.kdl"
+include "./noctalia.kdl"
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+environment {
+    QT_QPA_PLATFORMTHEME "qt6ct"
+}
+
+

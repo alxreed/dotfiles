@@ -1,0 +1,36 @@
+debug {
+  honor-xdg-activation-with-invalid-serial
+}
+
+window-rule {
+    geometry-corner-radius 20
+    clip-to-geometry true
+}
+
+window-rule {
+    match app-id="firefox"
+    open-on-workspace "1"
+}
+
+window-rule {
+    match app-id="google-chrome"
+    open-on-workspace "1"
+}
+
+window-rule {
+    match app-id="jetbrains-idea"
+    open-maximized true
+    open-on-workspace "1"
+}
+
+window-rule {
+    match app-id="discord"
+    open-maximized true
+    open-on-workspace "2"
+}
+
+window-rule {
+    match app-id="slack"
+    open-maximized true
+    open-on-workspace "2"
+}

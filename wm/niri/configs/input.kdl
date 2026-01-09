@@ -1,0 +1,11 @@
+input {
+    keyboard {
+        xkb {
+            layout "fr"
+        }
+    }
+
+    touchpad {
+        tap
+    }
+}
