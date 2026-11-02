@@ -3,10 +3,15 @@
   export JAVA_HOME='/usr/lib/jvm/java-18-openjdk-amd64'
 {% elif "arch" in profiles %}
   export JAVA_HOME='/usr/lib/jvm/default'
+{% elif "agicap" in profiles %}
+  export JAVA_HOME='/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home'
+  export PATH="$JAVA_HOME/bin:$PATH"
 {% endif %}
 
+{% if "linux" in profiles %}
 # Intellij
 export IDEA_JDK='/opt/intellij-idea-ultimate-edition/jbr'
+{% endif %}
 
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
@@ -14,9 +19,15 @@ export PATH="$PATH:$HOME/.cargo/bin"
 # Local
 export PATH=$PATH:$HOME/.local/bin
 
+{% if "agicap" in profiles %}
+# Go / krew (kubectl plugins)
+export PATH="$PATH:$HOME/go/bin:$HOME/.krew/bin"
+{% endif %}
+
 # Flutter
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
+{% if "linux" in profiles %}
 fullscreenshot() {
   FILE=~/Images/"screenshot-$(date +"%Y-%m-%dT%H:%M:%S").png"
   grimshot save screen $FILE
@@ -26,3 +37,4 @@ screenshot() {
   FILE=~/Images/"screenshot-$(date +"%Y-%m-%dT%H:%M:%S").png"
   grimshot copy area $FILE
 }
+{% endif %}

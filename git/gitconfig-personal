@@ -1,0 +1,3 @@
+# Identity for personal repositories (~/code/alxreed/), see includeIf in gitconfig
+[user]
+	email = ch.alexandre.reed@gmail.com

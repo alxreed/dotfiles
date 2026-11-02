@@ -3,11 +3,20 @@ dotfiles_dir = "code/alxreed/dotfiles"
 [settings]
 
 [settings.dots]
-alacritty = { source = "terminals/alacritty", target = ".config/alacritty" }
 ghostty = { source = "terminals/ghostty", target = ".config/ghostty" }
 zsh = { source = "zsh/zshrc", target = ".zshrc" }
 zsh_env = { source = "zsh/zshenv", target = ".zshenv" }
 gitconfig = { source = "git/gitconfig", target = ".gitconfig" }
+
+[profiles.linux]
+[profiles.ubuntu]
+extra_profiles = ["linux"]
+[profiles.arch]
+extra_profiles = ["linux"]
+[profiles.agicap]
+
+[profiles.linux.dots]
+alacritty = { source = "terminals/alacritty", target = ".config/alacritty" }
 pictures = { source = "pictures", target = "Images/pictures" }
 
 # Cursor
@@ -27,9 +36,6 @@ niri = { source = "wm/niri", target = ".config/niri" }
 # shell
 noctalia = { source = "shell/noctalia", target = ".config/noctalia" }
 
-[profiles.ubuntu]
-[profiles.arch]
-
 [profiles.ubuntu.dots]
 starship = { source = "zsh/starship.toml", target = ".config/starship/starship.toml" }
 neofetch = { source = "neofetch/ubuntu", target = ".config/neofetch" }
@@ -37,3 +43,10 @@ neofetch = { source = "neofetch/ubuntu", target = ".config/neofetch" }
 [profiles.arch.dots]
 starship = { source = "zsh/starship.toml", target = ".config/starship.toml" }
 neofetch = { source = "neofetch/arch", target = ".config/neofetch" }
+
+# macOS work laptop (Agicap)
+[profiles.agicap.dots]
+starship = { source = "zsh/starship.toml", target = ".config/starship.toml" }
+zprofile = { source = "zsh/zprofile", target = ".zprofile" }
+gitconfig_personal = { source = "git/gitconfig-personal", target = ".gitconfig-personal" }
+cmux = { source = "terminals/cmux/cmux.json", target = ".config/cmux/cmux.json" }

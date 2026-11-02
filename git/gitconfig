@@ -64,8 +64,26 @@
   mergeoptions = --no-edit
 
 [user]
-	email = ch.alexandre.reed@gmail.com
 	name = Alexandre Reed
+{% if "agicap" in profiles %}
+	email = alexandre.reed@agicap.com
+	signingkey = ~/.ssh/id_ed25519.pub
+
+# Commit signing is enforced on AgicapTech
+[gpg]
+	format = ssh
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
+
+[includeIf "gitdir:~/code/alxreed/"]
+	path = ~/.gitconfig-personal
+{% else %}
+	email = ch.alexandre.reed@gmail.com
+{% endif %}
 
 [init]
 	defaultBranch = main

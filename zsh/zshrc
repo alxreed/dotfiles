@@ -5,11 +5,22 @@ export LC_ALL=en_US.UTF-8
 # Editor
 export VISUAL="nvim"
 
+{% if "agicap" in profiles %}
+# mise (node, java, ... version manager)
+eval "$(/opt/homebrew/bin/mise activate zsh)"
+
+# Homebrew completions (kubectl, helm, gh, docker, mise, ...), must come before compinit
+fpath=(/opt/homebrew/share/zsh/site-functions /opt/homebrew/share/zsh-completions $fpath)
+
+# Antigen
+source /opt/homebrew/share/antigen/antigen.zsh
+{% else %}
 # nvm
 source /usr/share/nvm/init-nvm.sh
 
 # Antigen 
 source /usr/share/zsh/share/antigen.zsh 
+{% endif %}
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -20,11 +31,13 @@ antigen apply
 
 export EDITOR="vim"
 
+{% if "linux" in profiles %}
 # Aliases
 alias start='sudo systemctl start'
 alias stop='sudo systemctl stop'
 alias status='systemctl status'
 alias restart='sudo systemctl restart'
+{% endif %}
 
 # Get External IP / local IPs
 alias ip="curl ipinfo.io/ip"
@@ -34,8 +47,10 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
+{% if "linux" in profiles %}
 # lock screen
 alias lock="gnome-screensaver-command -l"
+{% endif %}
 
 # app running
 alias apps="ps -A"
@@ -52,8 +67,10 @@ alias glod="git pull origin develop"
 alias gcamno="git commit --amend --no-edit"
 alias gcam="git commit --amend"
 
+{% if "linux" in profiles %}
 # connect to ubastion
 alias bastion="ssh ubastion.adeo.com -l 20013176"
+{% endif %}
 
 # update && upgrade packages
 {% if "ubuntu" in profiles %}
@@ -62,6 +79,15 @@ alias bastion="ssh ubastion.adeo.com -l 20013176"
   alias up="yay -Syu"
 
   prompt off
+{% elif "agicap" in profiles %}
+  alias up="brew update && brew upgrade && brew cleanup"
+{% endif %}
+
+{% if "agicap" in profiles %}
+# Kubernetes
+alias kubectl="kubecolor"
+alias k="kubecolor"
+compdef kubecolor=kubectl
 {% endif %}
 
 eval "$(starship init zsh)"
