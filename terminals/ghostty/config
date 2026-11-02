@@ -1,8 +1,14 @@
+{% if not "agicap" in profiles %}
 theme = noctalia
+{% endif %}
 
 # Font
 font-family = Fira Code
+{% if "agicap" in profiles %}
+font-size = 14
+{% else %}
 font-size = 11
+{% endif %}
 font-style = Medium
 font-style-bold = Bold
 font-style-italic = Italic

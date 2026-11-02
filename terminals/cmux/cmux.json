@@ -1,0 +1,8 @@
+{
+  "$schema": "https://raw.githubusercontent.com/manaflow-ai/cmux/main/web/data/cmux.schema.json",
+  "schemaVersion": 1
+
+  // cmux app settings (JSONC). Terminal font/theme live in the Ghostty config
+  // (terminals/ghostty/config -> ~/.config/ghostty/config), which cmux reads.
+  // Run `cmux config docs` for the available keys, `cmux reload-config` to apply.
+}

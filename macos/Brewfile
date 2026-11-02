@@ -1,0 +1,115 @@
+tap "hashicorp/tap"
+tap "manaflow-ai/cmux"
+# Plugin manager for zsh, inspired by oh-my-zsh and vundle
+brew "antigen"
+# Text processing scripting language
+brew "awk"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Mozilla CA certificate store
+brew "ca-certificates"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Kubernetes package manager
+brew "helm"
+# Tool for automatically generating markdown documentation for helm charts
+brew "helm-docs"
+# Language server for Helm
+brew "helm-ls"
+# Deploy Kubernetes Helm Charts
+brew "helmfile"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Package manager for kubectl plugins
+brew "krew"
+# KubeConfig Manager
+brew "kubecm"
+# Colorize your kubectl output
+brew "kubecolor"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Template-free customization of Kubernetes YAML manifests
+brew "kustomize"
+# Utility for directing compilation
+brew "make"
+# Development kit for the Java programming language
+brew "openjdk"
+# Java-based project management
+brew "maven"
+# Render Jinja2 templates directly from the command-line to stdout
+brew "minijinja-cli"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Port scanning utility for large networks
+brew "nmap"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# High performance and flexible authorization/permission engine
+brew "openfga"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Rust toolchain installer
+brew "rustup"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Editor of encrypted files
+brew "sops"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Configuration helper for talos clusters
+brew "talhelper"
+# CLI for out-of-band management of Kubernetes nodes created by Talos
+brew "talosctl"
+# User interface to the TELNET protocol
+brew "telnet"
+# Dotfile manager with templating
+brew "toml-bombadil"
+# Subversion-like utility to work with Jackrabbit FileVault
+brew "vault-cli"
+# Internet file retriever
+brew "wget"
+# Linter for YAML files
+brew "yamllint"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Additional completion definitions for zsh
+brew "zsh-completions"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code@latest"
+# Ghostty-based terminal with vertical tabs and notifications for AI coding agents
+cask "cmux"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+# Developer platform
+cask "dotnet-sdk"
+cask "font-fira-code"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
+# Open source implementation of Microsoft's .NET Framework
+cask "mono-mdk"
+# Collaboration platform for API development
+cask "postman"
