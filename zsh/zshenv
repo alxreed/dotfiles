@@ -38,3 +38,6 @@ screenshot() {
   grimshot copy area $FILE
 }
 {% endif %}
+
+# Local secrets (tokens, ...), kept out of this repo
+[ -f "$HOME/.secrets.zsh" ] && source "$HOME/.secrets.zsh"
