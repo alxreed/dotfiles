@@ -44,6 +44,12 @@ neofetch = { source = "neofetch/ubuntu", target = ".config/neofetch" }
 starship = { source = "zsh/starship.toml", target = ".config/starship.toml" }
 neofetch = { source = "neofetch/arch", target = ".config/neofetch" }
 
+# GNOME autostart (workspaces & shortcuts: gnome/apply.sh)
+autostart_firefox = { source = "gnome/autostart/firefox.desktop", target = ".config/autostart/firefox.desktop" }
+autostart_ghostty = { source = "gnome/autostart/com.mitchellh.ghostty.desktop", target = ".config/autostart/com.mitchellh.ghostty.desktop" }
+autostart_claude = { source = "gnome/autostart/com.anthropic.Claude.desktop", target = ".config/autostart/com.anthropic.Claude.desktop" }
+autostart_discord = { source = "gnome/autostart/discord.desktop", target = ".config/autostart/discord.desktop" }
+
 # macOS work laptop (Agicap)
 [profiles.agicap.dots]
 starship = { source = "zsh/starship.toml", target = ".config/starship.toml" }

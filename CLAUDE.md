@@ -18,6 +18,7 @@ The repo must live at `~/code/alxreed/dotfiles` (`dotfiles_dir` in `bombadil.tom
 |---|---|---|
 | `agicap` | macOS work laptop | Homebrew, cmux terminal, `macos/Brewfile` |
 | `arch`, `ubuntu` | Linux | both extend `linux` (sway, niri, waybar, ...) via `extra_profiles` |
+| `arch` | Arch + GNOME | GNOME autostart in `gnome/autostart`; workspaces/shortcuts (dconf) applied with `gnome/apply.sh` |
 
 ## Conventions
 
