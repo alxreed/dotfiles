@@ -32,3 +32,9 @@
 
 ### Bar
 - [waybar](https://github.com/Alexays/Waybar)
+
+### GNOME (profil arch)
+- 5 workspaces fixes : Firefox → 1, Ghostty → 2, Claude → 3, Discord → 4, IntelliJ → 5 (extension Auto Move Windows)
+- `Super+1…5` change de workspace, `Super+Shift+1…5` y envoie la fenêtre
+- Firefox, Ghostty, Claude et Discord au démarrage (`gnome/autostart`, liés fichier par fichier par `bombadil link -p arch`)
+- Workspaces et raccourcis : `./gnome/apply.sh` (dconf, non géré par bombadil)
