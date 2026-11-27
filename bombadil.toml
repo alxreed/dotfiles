@@ -22,6 +22,10 @@ pictures = { source = "pictures", target = "Images/pictures" }
 # Cursor
 dmz = { source = "cursor", target = ".icons/default"}
 
+# Icons: zafiro-dark falls back to Papirus-Dark for icons it lacks
+# (overrides /usr/share/icons/zafiro-dark/index.theme, only Inherits changes)
+zafiro_index = { source = "icons/zafiro-dark/index.theme", target = ".local/share/icons/zafiro-dark/index.theme" }
+
 # launcher
 onagre = { source = "launchers/onagre", target = ".config/onagre" }
 wofi = { source = "launchers/wofi", target = ".config/wofi" }
